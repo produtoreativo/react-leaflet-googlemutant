@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Map, LayersControl } from 'react-leaflet';
+import GoogleApiLoader from 'components/googleapiloader';
 import GoogleMutant from 'components/googlemutant';
 import './App.css';
 
@@ -14,22 +15,24 @@ class App extends Component {
     };
     return (
       <div className="App">
-        <Map {...mapConf}>
-          <LayersControl position='topright'>
-            <BaseLayer checked name='Google Maps Roads'>
-              <GoogleMutant type="roadmap"/>
-            </BaseLayer>
-            <BaseLayer name='Google Maps Terrain'>
-              <GoogleMutant type="terrain" />
-            </BaseLayer>
-            <BaseLayer name='Google Maps Satellite'>
-              <GoogleMutant type="satellite" />
-            </BaseLayer>
-            <BaseLayer  name='Google Maps Hydrid'>
-              <GoogleMutant type="HIBRID" />
-            </BaseLayer>
-          </LayersControl>
-        </Map>
+        <GoogleApiLoader>
+          <Map {...mapConf}>
+            <LayersControl position='topright'>
+              <BaseLayer checked name='Google Maps Roads'>
+                <GoogleMutant type="roadmap"/>
+              </BaseLayer>
+              <BaseLayer name='Google Maps Terrain'>
+                <GoogleMutant type="terrain" />
+              </BaseLayer>
+              <BaseLayer name='Google Maps Satellite'>
+                <GoogleMutant type="satellite" />
+              </BaseLayer>
+              <BaseLayer  name='Google Maps Hydrid'>
+                <GoogleMutant type="HIBRID" />
+              </BaseLayer>
+            </LayersControl>
+          </Map>
+        </GoogleApiLoader>
       </div>
     );
   }
