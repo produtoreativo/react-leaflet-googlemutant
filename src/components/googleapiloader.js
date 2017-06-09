@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import GoogleMapsLoader from 'google-maps';
 
 class GoogleApiLoader extends Component {
 

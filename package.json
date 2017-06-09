@@ -21,7 +21,6 @@
     "GoogleMutant"
   ],
   "dependencies": {
-    "google-maps": "^3.2.1",
     "leaflet.gridlayer.googlemutant": "^0.6.2"
   },
   "peerDependencies": {
@@ -50,6 +49,7 @@
     "test": "NODE_PATH=src react-scripts test --env=jsdom",
     "eject": "NODE_PATH=src react-scripts eject",
     "transpile": "webpack",
-    "release": "standard-version"
+    "release": "standard-version",
+    "deploy": "./publish.sh"
   }
 }
