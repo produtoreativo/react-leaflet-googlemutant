@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-  entry: "./src/components/index.js",
+  entry: "./src/react-leaflet-googlemutant/index.js",
   resolve: {
     modules: [path.resolve(__dirname, "src"), "node_modules"]
   },
@@ -24,6 +24,12 @@ module.exports = {
         commonjs2: 'react-dom',
         commonjs: 'react-dom',
         amd: 'react-dom'
+    },
+    'prop-types': {
+      root: 'PropTypes',
+      commonjs2: 'prop-types',
+      commonjs: 'prop-types',
+      amd: 'prop-types'
     },
     'react-leaflet': {
       commonjs2: 'react-leaflet',

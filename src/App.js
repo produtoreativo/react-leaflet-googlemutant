@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Map, LayersControl } from 'react-leaflet';
-import GoogleApiLoader from 'components/googleapiloader';
-import GoogleMutant from 'components/googlemutant';
+import GoogleApiLoader from 'react-leaflet-googlemutant/googleapiloader';
+import GoogleMutant from 'react-leaflet-googlemutant/googlemutant';
 import './App.css';
 
 class App extends Component {
@@ -27,8 +27,8 @@ class App extends Component {
               <BaseLayer name='Google Maps Satellite'>
                 <GoogleMutant type="satellite" />
               </BaseLayer>
-              <BaseLayer  name='Google Maps Hydrid'>
-                <GoogleMutant type="HIBRID" />
+              <BaseLayer  name='Google Maps hybrid'>
+                <GoogleMutant type="hybrid" />
               </BaseLayer>
             </LayersControl>
           </Map>

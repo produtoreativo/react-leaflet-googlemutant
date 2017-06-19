@@ -79,7 +79,8 @@ class GoogleApiLoader extends Component {
   }
 
   render() {
-    const { googleLoaded, children } = this.state;
+    const { googleLoaded } = this.state;
+    const { children } = this.props;
     if (!googleLoaded) {
       return null;
     }
