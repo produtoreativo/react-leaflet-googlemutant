@@ -12,7 +12,6 @@ class GoogleApiLoader extends Component {
   }
 
   state = {
-    key: null,
     googleLoaded: false,
     url: 'https://maps.googleapis.com/maps/api/js',
     version: '3.27',
@@ -21,7 +20,7 @@ class GoogleApiLoader extends Component {
     region: null,
     channel: null,
     libraries: [],
-    callback: null,
+    callback: '__google_maps_api_provider_initializator__',
     children: null,
   }
 

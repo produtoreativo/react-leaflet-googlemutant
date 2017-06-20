@@ -10,7 +10,7 @@ module.exports = {
     path: path.join(__dirname, 'lib'),
     filename: "react-leaflet-googlemutant.js",
     library: "ReactLeafletGoogleMutant",
-    libraryTarget: "umd"
+    libraryTarget: "amd"
   },
   externals: {
     react: {
@@ -54,8 +54,15 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env', "es2015", "react", "stage-0"],
-            plugins: ['transform-runtime']
+            presets: ["react", "stage-2"],
+            plugins: [
+              ['transform-runtime', {
+                "helpers": false,
+                "polyfill": false,
+                "regenerator": false,
+                "moduleName": "babel-runtime"
+              }]
+            ]
           }
         }
       }
