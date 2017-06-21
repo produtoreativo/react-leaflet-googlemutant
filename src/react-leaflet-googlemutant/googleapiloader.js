@@ -7,7 +7,13 @@ class GoogleApiLoader extends Component {
     children: PropTypes.element.isRequired,
     apiKey: PropTypes.string,
     libraries: PropTypes.arrayOf(
-      PropTypes.oneOf(['drawing', 'geometry', 'places', 'visualization'])
+      PropTypes.oneOf([
+        'drawing',
+        'geometry',
+        'places',
+        'visualization',
+        'directions',
+      ])
     ),
   }
 
