@@ -23,7 +23,7 @@ class App extends Component {
     };
     return (
       <div className="App">
-        <GoogleApiLoader>
+        <GoogleApiLoader apiKey="AXSBVXSBVXSBVXBSVXS">
           <Map {...mapConf}>
             <LayersControl position='topright'>
               <BaseLayer checked name='Google Maps Roads'>

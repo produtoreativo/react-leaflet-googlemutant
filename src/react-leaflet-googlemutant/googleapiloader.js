@@ -5,7 +5,7 @@ class GoogleApiLoader extends Component {
 
   static propTypes = {
     children: PropTypes.element.isRequired,
-    key: PropTypes.string,
+    apiKey: PropTypes.string,
     libraries: PropTypes.arrayOf(
       PropTypes.oneOf(['drawing', 'geometry', 'places', 'visualization'])
     ),
@@ -48,7 +48,7 @@ class GoogleApiLoader extends Component {
     const {
       url,
       callback,
-      key,
+      apiKey,
       libraries,
       client,
       version,
@@ -56,7 +56,7 @@ class GoogleApiLoader extends Component {
       language,
       region,
     } = this.state;
-    const chave = key ? `&key=${key}` : '';
+    const chave = apiKey ? `&key=${apiKey}` : '';
     const libs = libraries.length ? `&libraries=${libraries.join(',')}` : '';
     const cliente = client ? `&client=${client}&v=${version}` : '';
     const canal = channel ? `&channel=${channel}` : '';
