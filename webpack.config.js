@@ -10,7 +10,7 @@ module.exports = {
     path: path.join(__dirname, 'lib'),
     filename: "react-leaflet-googlemutant.js",
     library: "ReactLeafletGoogleMutant",
-    libraryTarget: "amd"
+    libraryTarget: "umd"
   },
   externals: {
     react: {
