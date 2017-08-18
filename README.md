@@ -36,7 +36,7 @@ class App extends Component {
                 <GoogleMutant type="satellite" />
               </BaseLayer>
               <BaseLayer  name='Google Maps Hydrid'>
-                <GoogleMutant type="HIBRID" />
+                <GoogleMutant type="hybrid" />
               </BaseLayer>
             </LayersControl>
           </Map>
