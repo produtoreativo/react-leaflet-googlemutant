@@ -21,6 +21,7 @@
     "GoogleMutant"
   ],
   "dependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "leaflet.gridlayer.googlemutant": "^0.6.2"
   },
   "peerDependencies": {
