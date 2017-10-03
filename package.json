@@ -1,7 +1,7 @@
 {
   "name": "react-leaflet-googlemutant",
   "description": "React leaflet wrapper to GoogleMutant plugin",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "main": "./lib/react-leaflet-googlemutant.js",
   "private": false,
   "repository": {
