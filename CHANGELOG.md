@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.18"></a>
+## [0.1.18](https://github.com/produtoreativo/react-leaflet-googlemutant/compare/v0.1.17...v0.1.18) (2017-12-15)
+
+
+
 <a name="0.1.17"></a>
 ## [0.1.17](https://github.com/produtoreativo/react-leaflet-googlemutant/compare/v0.1.16...v0.1.17) (2017-12-15)
 
