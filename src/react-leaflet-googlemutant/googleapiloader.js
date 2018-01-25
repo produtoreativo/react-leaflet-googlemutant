@@ -64,13 +64,13 @@ class GoogleApiLoader extends Component {
       apiKey,
     } = this.state;
     const chave = apiKey ? `&key=${apiKey}` : '';
-    const signature = signature ? `&signature=${signature}` : '';
+    const assinatura = signature ? `&signature=${signature}` : '';
     const libs = libraries.length ? `&libraries=${libraries.join(',')}` : '';
     const cliente = client ? `&client=${client}&v=${version}` : '';
     const canal = channel ? `&channel=${channel}` : '';
     const lang = language ? `&language=${language}`: '';
     const regiao = region ? `&region=${region}`: '';
-    return `${url}?callback=${callback}${signature}${chave}${libs}${cliente}${canal}${lang}${regiao}`;
+    return `${url}?callback=${callback}${assinatura}${chave}${libs}${cliente}${canal}${lang}${regiao}`;
   }
 
   load = () => {
