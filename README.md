@@ -4,7 +4,7 @@
 
 yarn add react react-dom leaflet react-leaflet react-leaflet-googlemutant
 
-### Inport with GMaps loader class
+### Import with GMaps loader class
 
 ```js
 import React, { Component } from 'react';
