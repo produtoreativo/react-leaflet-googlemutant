@@ -4,6 +4,9 @@ import GoogleApiLoader from 'react-leaflet-googlemutant/googleapiloader';
 import GoogleMutant from 'react-leaflet-googlemutant/googlemutant';
 import './App.css';
 
+import dotenv from 'dotenv'
+dotenv.config()
+
 class App extends Component {
   render() {
     const { BaseLayer } = LayersControl;
@@ -15,7 +18,7 @@ class App extends Component {
     };
     return (
       <div className="App">
-        <GoogleApiLoader>
+        <GoogleApiLoader apiKey={process.env.REACT_APP_GOOGLE_API_KEY}>
           <Map {...mapConf}>
             <LayersControl position='topright'>
               <BaseLayer checked name='Google Maps Roads'>
@@ -29,6 +32,12 @@ class App extends Component {
               </BaseLayer>
               <BaseLayer  name='Google Maps hybrid'>
                 <GoogleMutant type="hybrid" />
+              </BaseLayer>
+              <BaseLayer  name='Google Maps Traffic'>
+                <GoogleMutant type="roadmap" layer="TrafficLayer" />
+              </BaseLayer>
+              <BaseLayer  name='Google Maps Trasit'>
+                <GoogleMutant type="roadmap" layer="TransitLayer" />
               </BaseLayer>
             </LayersControl>
           </Map>
