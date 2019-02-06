@@ -20,4 +20,12 @@ export default class GoogleMutant extends MapLayer {
     }
     return layer;
   }
+
+  addLayer(layer) {
+    this.leafletElement.addGoogleLayer(layer)
+  }
+
+  removeLayer(layer) {
+    this.leafletElement.removeGoogleLayer(layer)
+  }
 }
